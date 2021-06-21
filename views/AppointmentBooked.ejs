@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointent</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        body {
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3xyRmW79jSj2ljzM6NlPr0ExRH9Dcm93Zxg&usqp=CAU');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="row">
+        <%- include("header") %>
+    </div>
+    <br>
+    <div class="container mt-5">
+        <h1>Booked Slot Detail</h1>
+        <table class="table table-dark col-md-8 col-sm-3">
+            <thead>
+                <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Staff</th>
+                    <th scope="col">Vanue</th>
+                    <th scope="col">Service</th>
+                    <th scope="col">From</th>
+                    <th scope="col">date</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <%= (name).charAt(0).toUpperCase()+ name.slice(1) %>
+
+                    </td>
+                    <th scope="row">
+                        <%= staf %>
+                    </th>
+                    <td>
+                        <%= venu %>
+
+                    </td>
+                    <td>
+                        <%= srv %>
+
+                    </td>
+                    <td>
+                        <%= from %>:
+                            <%= to %>
+                    </td>
+                    <td>
+                        <%= date %>
+
+                    </td>
+
+                </tr>
+            </tbody>
+
+        </table>
+
+    </div>
+    <%- include("footer") %>
+
+
+    <!-- Footer -->
+    <!-- Footer -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <link rel="stylesheet" href="node_modules/mdbootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/mdbootstrap/css/mdb.min.css">
+    <link rel="stylesheet" href="node_modules/mdbootstrap/css/style.css">
+    <style>
+        body {
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3xyRmW79jSj2ljzM6NlPr0ExRH9Dcm93Zxg&usqp=CAU');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" style="margin-top: 70px;">
+        <div class="row">
+            <%- include("header") %>
+        </div>
+        <h1 class="text-center" style="font-weight: bold;">Check Availability</h1>
+        <form action="/getservice   " method="post">
+            <div class="form-group">
+                <label for="exampleInputEmail1" style="font-weight: bold;">Name</label>
+                <select name="name" onchange="check();check2()" class="form-control" id="name">
+                    <option>None</option>
+                    <option>Hair Cutting</option>
+                    <option>Manicure</option>
+                    <option>Pedicure</option>
+                </select>
+                <small id="emailHelp" class="form-text text-muted">According to the name of the service Venue is
+                    automatically selected.</small>
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlSelect1" style="font-weight: bold;">Venue</label>
+                <input class="form-control" min="1" max="3" onchange="check2()" name="venue" type="number" id="venue"
+                    readonly>
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlSelect1" style="font-weight: bold;">Staff</label>
+                <small id="emailHelp" class="form-text text-muted">There are only two Staff for every venue like
+                    for venue 3 1and 2 staff is available.</small>
+                <input type="text" class="form-control" id="staff" name="staff" aria-describedby="emailHelp"
+                    placeholder="Enter email">
+
+            </div>
+
+            <div class="form-group row">
+                <label for="example-date-input" class="col-2 col-form-label" style="font-weight: bold;">Date</label>
+                <div class="col-10">
+                    <input class="form-control" name="date" type="date" value="2011-08-19" id="date">
+                </div>
+            </div>
+            <input class="btn btn-primary" type="submit" value="submit">
+        </form>
+    </div>
+    <%- include("footer")%>
+        <script>
+            function valid() {
+                var cal = document.getElementById('venue').value;
+                if (cal == '1') {
+
+                }
+            }
+            function check() {
+                var val = document.getElementById('name').value;
+                if (val == 'Hair Cutting') {
+                    document.getElementById('venue').value = 3;
+                } else if (val == 'Manicure') {
+                    document.getElementById('venue').value = 1;
+                } else if (val == 'Pedicure') {
+                    document.getElementById('venue').value = 2;
+                } else {
+                    alert('Staff not available')
+                }
+            }
+            function check2() {
+                var cal = document.getElementById('venue').value;
+                if (cal == '1') {
+                    document.getElementById('staff').value = 5;
+                } else if (cal == '2') {
+                    document.getElementById('staff').value = 3;
+                } else if (cal == '3') {
+                    document.getElementById('staff').value = 1;
+                }
+            }
+        </script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,330 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <link rel="stylesheet" href="node_modules/mdbootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/mdbootstrap/css/mdb.min.css">
+    <link rel="stylesheet" href="node_modules/mdbootstrap/css/style.css">
+    <title>Home</title>
+    <style>
+        body {
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3xyRmW79jSj2ljzM6NlPr0ExRH9Dcm93Zxg&usqp=CAU');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        .carousel-item {
+            height: 100vh;
+            min-height: 350px;
+            background: no-repeat center center scroll;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+
+        section {
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+        }
+
+        .lnr {
+            display: inline-block;
+            fill: currentColor;
+            width: 1em;
+            height: 1em;
+            vertical-align: -0.05em;
+            stroke-width: 1;
+        }
+
+        .services-icon {
+            margin-bottom: 20px;
+            font-size: 30px;
+        }
+
+        bgc2,
+        .vLine,
+        .hLine {
+            background-color: #0F52BA;
+        }
+
+        .quote-icon {
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+
+        .services-icon {
+            font-size: 60px;
+            margin-left: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <%- include("header") %>
+        <div class="col-md-12">
+            <header class="mt-5">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner" role="listbox">
+                        <!-- Slide One - Set the background image for this slide in the line below -->
+                        <div class="carousel-item active"
+                            style="background-image: url('https://www.joomshaper.com/images/2019/10/23/barber-thumb-1.jpg')">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h2 class="display-4" style="color: black;">
+                                    ZainBaba Saloon
+                                </h2>
+                                <p class="lead">Barbershop is not a hobby, it's a lifestyle.</p>
+                            </div>
+                        </div>
+                        <!-- Slide Two - Set the background image for this slide in the line below -->
+                        <div class="carousel-item"
+                            style="background-image: url('https://avante.biz/wp-content/uploads/Barbershop-Wallpapers/Barbershop-Wallpapers-001.jpg')">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h2 class="display-4">HarshitBaba Saloon</h2>
+                                <p class="lead">No barber shaves so close but another finds worke.</p>
+                            </div>
+                        </div>
+                        <!-- Slide Three - Set the background image for this slide in the line below -->
+                        <div class="carousel-item"
+                            style="background-image: url('https://cdn.shopify.com/s/files/1/0103/5639/2021/products/2_8ba1be88-d82f-4af3-8f6c-8c5c78a440ee_1024x1024.jpg?v=1583292548')">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h2 class="display-4">RajBaba Saloon</h2>
+                                <p class="lead">If you keep walking past the barbers, eventually you'll get a haircut.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </header>
+
+            <!-- Page Content -->
+            <section class="py-5 text-center">
+                <div class="container">
+                    <h2 class="text-center">Barber Services</h2>
+                    <p class="text-muted mb-5 text-center">There are many variations of passages of Lorem Ipsum
+                        available,
+                        but
+                        the majority have suffered alteration in some form.</p>
+                    <div class="row">
+                        <div class="col-sm-6 col-lg-4 mb-3">
+                            <svg class="lnr text-primary services-icon">
+                                <use xlink:href="#lnr-magic-wand"></use>
+                            </svg>
+                            <h6 class="ml-4">Hair Cutting</h6>
+                            <p class="text-muted">Ex cupidatat eu officia consequat incididunt labore occaecat ut veniam
+                                labore
+                                et cillum id et.</p>
+                        </div>
+                        <div class="col-sm-6 col-lg-4 mb-3">
+                            <svg class="lnr text-primary services-icon">
+                                <use xlink:href="#lnr-heart"></use>
+                            </svg>
+                            <h6 class="ml-4">Royal Pedicure</h6>
+                            <p class="text-muted">Tempor aute occaecat pariatur esse aute amet.</p>
+                        </div>
+                        <div class="col-sm-6 col-lg-4 mb-3">
+                            <svg class="lnr text-primary services-icon">
+                                <use xlink:href="#lnr-rocket"></use>
+                            </svg>
+                            <h6 class="ml-4">Essential Facial</h6>
+                            <p class="text-muted">Voluptate ex irure ipsum ipsum ullamco ipsum reprehenderit non ut
+                                mollit
+                                commodo.</p>
+                        </div>
+                        <div class="col-sm-6 col-lg-4 mb-3">
+                            <svg class="lnr text-primary services-icon">
+                                <use xlink:href="#lnr-paperclip"></use>
+                            </svg>
+                            <h6 class="ml-4">Natural Nail Grooming</h6>
+                            <p class="text-muted">Tempor commodo nostrud ex Lorem occaecat duis occaecat minim.</p>
+                        </div>
+                        <div class="col-sm-6 col-lg-4 mb-3">
+                            <svg class="lnr text-primary services-icon">
+                                <use xlink:href="#lnr-screen"></use>
+                            </svg>
+                            <h6 class="ml-4">Moustache and Beard Trim</h6>
+                            <p class="text-muted">Et fugiat sint occaecat voluptate incididunt anim nostrud ea cillum
+                                cillum
+                                consequat.</p>
+                        </div>
+                        <div class="col-sm-6 col-lg-4 mb-3">
+                            <svg class="lnr text-primary services-icon">
+                                <use xlink:href="#lnr-inbox"></use>
+                            </svg>
+                            <h6 class="ml-4">Deep Tissue Massage</h6>
+                            <p class="text-muted">Et labore tempor et adipisicing dolor.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="main">
+                <div class="container">
+                    <h1 class="text-center mb-4 p-4 text-secondary">Recommended Services</h1>
+                    <div class="row">
+
+                        <div class="card-columns">
+                            <div class="card shadow border-0">
+                                <img class="card-img-top"
+                                    src="https://image.shutterstock.com/image-photo/young-woman-getting-her-hair-600w-220838053.jpg"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title that wraps to a new line</h5>
+                                    <p class="card-text">This is a longer card with supporting text below as a natural
+                                        lead-in
+                                        to additional content. This content is a little bit longer.</p>
+                                </div>
+                            </div>
+                            <div class="card shadow border-0  p-3">
+                                <blockquote class="blockquote mb-0 card-body">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a
+                                        ante.
+                                    </p>
+                                    <footer class="blockquote-footer">
+                                        <small class="text-muted">
+                                            Someone famous in <cite title="Source Title">Source Title</cite>
+                                        </small>
+                                    </footer>
+                                </blockquote>
+                            </div>
+                            <div class="card shadow border-0">
+                                <img class="card-img-top" style="height: 400px;"
+                                    src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This card has supporting text below as a natural lead-in to
+                                        additional
+                                        content.</p>
+                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                </div>
+                            </div>
+                            <div class="card shadow border-0 bg-primary text-white text-center p-3">
+                                <blockquote class="blockquote mb-0">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.
+                                    </p>
+                                    <footer class="blockquote-footer">
+                                        <small>
+                                            Someone famous in <cite title="Source Title">Source Title</cite>
+                                        </small>
+                                    </footer>
+                                </blockquote>
+                            </div>
+                            <!-- <div class="card shadow border-0 text-center">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This card has a regular title and short paragraphy of text below
+                                it.
+                            </p>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                    </div> -->
+                            <div class="card shadow border-0">
+                                <img class="card-img"
+                                    src="https://image.shutterstock.com/image-photo/looking-good-already-close-side-260nw-364870457.jpg"
+                                    alt="Card image">
+                            </div>
+                            <div class="card shadow border-0 p-3 text-right">
+                                <blockquote class="blockquote mb-0">
+
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a
+                                        ante.
+                                    </p>
+                                    <footer class="blockquote-footer">
+                                        <small class="text-muted">
+                                            Someone famous in <cite title="Source Title">Source Title</cite>
+                                        </small>
+                                    </footer>
+                                </blockquote>
+                            </div>
+                            <div class="card shadow border-0">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This is another card with title and supporting text below. This
+                                        card
+                                        has some additional content to make it slightly taller overall.</p>
+                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Page Content -->
+            <div class="container">
+                <div class="row" style="text-align: center;">
+                    <!-- Team Member 2 -->
+                    <div class="col-xl-4 col-md-6 mb-4 ">
+                        <div class="card border-0 shadow">
+                            <img style="height: 300px; width: 300px; padding-left:40px ;"
+                                src=https://lh3.googleusercontent.com/UjCaNZ_11ApZ3SzXchhMnszesTtI3lWhwaXGLsgIM9YQ-IUaftUnjT-P5CoCaFpda0xAk5k9-t_QfaTWfqrMhQAfGRrOWai3z2whsvopd3FuwBgdgHWNQaYmd0qWxjC1HM9w7ciKm8tYK7OM3pm_nYzE-i0T5o9wRLTl6X1J8lxmALBzthWfjqpFBPC5Sz2jhSoPYMQ6XMGpShKtTlMzmFYP4tHO93ZTHufJ3iFPyoRd4_CpAbFr56fA3MtHr7mcW4fQ91tptWEtX8BsE1C1cA8um5g9v6IKX2vDtJF_3RErXB_mEeKcfFaKTtE1blhgIFOlIoKxOE8hY9yQX7FdDkMEFVEXiD85YOs2I-N1z-6nEniS9BnTKVL2Klb42nBePJ53UAL0xNVDOB1SQAnKR-bxiqqPrpRiwbtxZtlib_qjz0Q703SHqKK105ufYZeNwSEh-OBLGqNzCWAPtEX-lgnTOMFNq5Np2W5ZdLpJvf2uKCxPIAxSJHNuXV9H5GUXYm3kVMJWAIpdv9imPZ_vsrGjWbTo5k6b63kHmz2j-Fb7D4-aRlWv1T9oCoLfzJbmMZyXkm_FeLmxPzpVDYdvUJ4kCMPQeL9VsFoNc7hpidvQegyMfRcJ57jFENoK78RauCCUyPUH6dVdBS8Ac_HSq2U_aqBoMXNl4dzqf6T3GK8G2GWyFXuL8wco4inPRWVeAqKwISK0ba_RoN7bv59Zsvna=w478-h637-no?authuser=1"
+                                class="card-img-top" alt="...">
+                            <div class="card-body text-center">
+                                <h5 class="card-title mb-0">Harshit Dixit</h5>
+                                <div class="card-text text-black-50">Full Stak Developer</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-8 col-md-6 mb-4 ">
+                        <div class="card border-0 shadow">
+                            <h4 class="mt-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime minima harum sint quasi tempore officia blanditiis molestiae veritatis ipsum, ad, cum incidunt rerum dolor ipsam enim neque. Eligendi, hic animi? Beatae magni autem tenetur possimus expedita explicabo facere quasi vel! Illum eaque reprehenderit quo? Blanditiis distinctio ullam sed debitis exercitationem? Impedit aspernatur nemo amet doloribus suscipit accusantium minima. Voluptas dolorum similique ratione unde perferendis dolorem? Officiis nemo, maxime ullam iste et doloremque rem aliquam hic veniam ut autem? Tempore vel molestiae, magni minus fuga </h4>
+                            <div class="card-body text-center">
+                                <h5 class="card-title mb-0">Harshit Dixit</h5>
+                                <div class="card-text text-black-50">Full Stak Developer</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.row -->
+            </div>
+        </div>
+        <%- include("footer") %>
+
+            <!-- Footer -->
+
+            <!-- /.container -->
+            <!-- Optional JavaScript -->
+            <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+                integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+                crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+                integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+                crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+                integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+                crossorigin="anonymous"></script>
+            <script src="https://cdn.linearicons.com/free/1.0.0/svgembedder.min.js"></script>
+
+</body>
+
+</html>
